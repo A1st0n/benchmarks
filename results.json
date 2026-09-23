@@ -1,0 +1,264 @@
+{
+  "generated": "2026-09-22",
+  "machine": "Darwin 24.6.0 x86_64",
+  "python": "3.14.7",
+  "repos": {
+    "A1st0n": {
+      "commits": 19,
+      "first_commit": "2026-08-20",
+      "last_commit": "2026-08-20",
+      "tracked_files": 1,
+      "loc": {},
+      "loc_total": 0
+    },
+    "DermBuddy": {
+      "commits": 2,
+      "first_commit": "2026-08-21",
+      "last_commit": "2026-08-27",
+      "tracked_files": 7,
+      "loc": {
+        "JavaScript": 14,
+        "HTML": 12
+      },
+      "loc_total": 26
+    },
+    "Grocery-ML": {
+      "commits": 1,
+      "first_commit": "2026-08-07",
+      "last_commit": "2026-08-07",
+      "tracked_files": 139,
+      "loc": {
+        "Python": 2650,
+        "C++": 2421,
+        "JavaScript": 1550,
+        "CSS": 1275,
+        "HTML": 240
+      },
+      "loc_total": 8136,
+      "bench": {
+        "test_accuracy_pct": 37.02,
+        "random_baseline_pct": 10.0,
+        "lift_over_baseline_x": 3.7,
+        "dataset_rows": 2078,
+        "classes": 10,
+        "predict() single-item latency": {
+          "n": 2000,
+          "p50_ms": 1.291,
+          "p95_ms": 1.442,
+          "p99_ms": 1.912,
+          "mean_ms": 1.319,
+          "ops_per_s": 758
+        },
+        "batch inference": {
+          "rows": 10000,
+          "seconds": 0.1239,
+          "rows_per_s": 80727
+        },
+        "riscv_simulator": {
+          "sample_part1.txt single-cycle": {
+            "cycles": "6",
+            "wall_ms_p50": 9.197
+          },
+          "sample_part1.txt pipelined": {
+            "cycles": "16",
+            "wall_ms_p50": 9.283
+          },
+          "sample_part2.txt single-cycle": {
+            "cycles": "6",
+            "wall_ms_p50": 9.23
+          },
+          "sample_part2.txt pipelined": {
+            "cycles": "16",
+            "wall_ms_p50": 9.304
+          }
+        }
+      }
+    },
+    "betting-dashboard": {
+      "commits": 17,
+      "first_commit": "2026-06-29",
+      "last_commit": "2026-07-01",
+      "tracked_files": 24,
+      "loc": {
+        "JavaScript": 1294,
+        "CSS": 641,
+        "Python": 446,
+        "HTML": 12
+      },
+      "loc_total": 2393,
+      "bench": {
+        "settlement_test": "pass",
+        "settlement_test_ms": 912,
+        "POST /api/bet (write)": {
+          "n": 1000,
+          "p50_ms": 5.925,
+          "p95_ms": 10.844,
+          "p99_ms": 12.671,
+          "mean_ms": 6.771,
+          "ops_per_s": 148
+        },
+        "GET /api/me": {
+          "n": 1000,
+          "p50_ms": 0.795,
+          "p95_ms": 1.031,
+          "p99_ms": 1.393,
+          "mean_ms": 0.837,
+          "ops_per_s": 1195
+        },
+        "GET /api/mybets (1k+ bets)": {
+          "n": 200,
+          "p50_ms": 12.243,
+          "p95_ms": 14.411,
+          "p99_ms": 38.474,
+          "mean_ms": 13.177,
+          "ops_per_s": 76
+        },
+        "settle_bets": {
+          "bets": 5020,
+          "seconds": 0.201,
+          "bets_per_s": 24947
+        }
+      }
+    },
+    "course-enrollment-system": {
+      "commits": 25,
+      "first_commit": "2026-06-17",
+      "last_commit": "2026-06-23",
+      "tracked_files": 21,
+      "loc": {
+        "JavaScript": 654,
+        "Python": 462,
+        "CSS": 169,
+        "HTML": 13
+      },
+      "loc_total": 1298,
+      "bench": {
+        "endpoints": 20,
+        "rbac_student_blocked_from_admin": true,
+        "login (password hash verify + JWT)": {
+          "n": 50,
+          "p50_ms": 209.817,
+          "p95_ms": 217.494,
+          "p99_ms": 226.01,
+          "mean_ms": 211.511,
+          "ops_per_s": 5
+        },
+        "GET /api/me (JWT decode)": {
+          "n": 1000,
+          "p50_ms": 0.752,
+          "p95_ms": 0.975,
+          "p99_ms": 1.276,
+          "mean_ms": 0.786,
+          "ops_per_s": 1272
+        },
+        "GET /api/student/my-courses": {
+          "n": 1000,
+          "p50_ms": 3.097,
+          "p95_ms": 3.929,
+          "p99_ms": 4.674,
+          "mean_ms": 3.261,
+          "ops_per_s": 307
+        },
+        "GET /api/admin/enrollments": {
+          "n": 1000,
+          "p50_ms": 3.584,
+          "p95_ms": 4.184,
+          "p99_ms": 4.641,
+          "mean_ms": 3.684,
+          "ops_per_s": 271
+        },
+        "GET /api/teacher/courses": {
+          "n": 1000,
+          "p50_ms": 3.701,
+          "p95_ms": 4.433,
+          "p99_ms": 5.317,
+          "mean_ms": 3.831,
+          "ops_per_s": 261
+        }
+      }
+    },
+    "html-practice": {
+      "commits": 2,
+      "first_commit": "2026-06-03",
+      "last_commit": "2026-06-04",
+      "tracked_files": 48,
+      "loc": {
+        "CSS": 511,
+        "HTML": 353,
+        "JavaScript": 341
+      },
+      "loc_total": 1205
+    },
+    "odin-recipes": {
+      "commits": 2,
+      "first_commit": "2025-09-02",
+      "last_commit": "2025-09-02",
+      "tracked_files": 1,
+      "loc": {},
+      "loc_total": 0
+    },
+    "patreon-clone": {
+      "commits": 6,
+      "first_commit": "2026-08-10",
+      "last_commit": "2026-08-14",
+      "tracked_files": 37,
+      "loc": {
+        "JavaScript": 2268,
+        "CSS": 493,
+        "SQL": 163
+      },
+      "loc_total": 2924,
+      "bench": {
+        "unit_tests_pass": 6,
+        "unit_tests_fail": 0,
+        "suite_ms": 303,
+        "api_routes": 4,
+        "pages": 11
+      }
+    },
+    "portfolio": {
+      "commits": 2,
+      "first_commit": "2026-09-03",
+      "last_commit": "2026-09-03",
+      "tracked_files": 3,
+      "loc": {
+        "CSS": 128,
+        "HTML": 91
+      },
+      "loc_total": 219
+    },
+    "titanwork": {
+      "commits": 2,
+      "first_commit": "2026-08-21",
+      "last_commit": "2026-08-21",
+      "tracked_files": 22,
+      "loc": {
+        "Python": 1
+      },
+      "loc_total": 1
+    },
+    "tpch": {
+      "commits": 3,
+      "first_commit": "2026-09-02",
+      "last_commit": "2026-09-09",
+      "tracked_files": 2,
+      "loc": {
+        "SQL": 77
+      },
+      "loc_total": 77
+    }
+  },
+  "totals": {
+    "repos": 11,
+    "commits": 81,
+    "loc": {
+      "JavaScript": 6121,
+      "Python": 3559,
+      "CSS": 3217,
+      "C++": 2421,
+      "HTML": 721,
+      "SQL": 240
+    },
+    "loc_total": 16279
+  }
+}
